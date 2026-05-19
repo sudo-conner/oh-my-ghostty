@@ -111,6 +111,19 @@ brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
 ```
 
+Then add them to your .zshrc:
+
+```bash
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+```
+
+After editing your config, reload it with:
+
+```bash
+source ~/.zshrc
+```
+
 You can see that `ca` isn't a valid command, so the text is red.
 But as soon as we finish typing `cat`, the text turns green!
 And the autosuggestion means at any time we can just hit the Right Arrow key and complete the suggestion.
